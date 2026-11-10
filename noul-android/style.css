@@ -1,0 +1,18 @@
+*{box-sizing:border-box;margin:0}
+:root{--g:#3ddc84;--bg:#06130d;--tx:#e8fff2}
+html,body{min-height:100%;background:radial-gradient(120% 80% at 50% 0,#0f3a24,var(--bg) 60%);color:var(--tx);font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif}
+.hero{max-width:640px;margin:0 auto;padding:max(40px,env(safe-area-inset-top)) 24px 60px;text-align:center}
+h1{font-size:clamp(2.4rem,9vw,4.2rem);line-height:1;font-weight:900;letter-spacing:-.02em;margin:28px 0 20px}
+.lead{font-size:1.2rem;line-height:1.5;margin-bottom:14px}
+.desc{line-height:1.6;opacity:.75;margin-bottom:28px;max-width:60ch;margin-inline:auto}
+.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{border:2px solid var(--g);background:transparent;color:var(--g);padding:14px 22px;border-radius:999px;font:inherit;font-weight:700;text-decoration:none;cursor:pointer}
+.btn.primary{background:var(--g);color:#032012}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.hint{margin-top:18px;font-size:.9rem;opacity:.7;min-height:1.4em}
+.robot{position:relative;width:120px;height:80px;margin:20px auto 0}
+.head{position:absolute;inset:14px 0 0;background:var(--g);border-radius:60px 60px 0 0;display:flex;justify-content:space-around;align-items:center;padding:0 28px}
+.head i{width:12px;height:12px;border-radius:50%;background:#032012;margin-top:-14px}
+.ant{position:absolute;top:0;width:5px;height:24px;background:var(--g);border-radius:4px;transform-origin:bottom}
+.a1{left:30px;transform:rotate(-25deg)}.a2{right:30px;transform:rotate(25deg)}
+@media(prefers-reduced-motion:no-preference){.robot{animation:b 1.6s ease-in-out infinite alternate}@keyframes b{to{transform:translateY(-8px)}}}
